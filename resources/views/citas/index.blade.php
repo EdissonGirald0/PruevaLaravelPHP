@@ -60,12 +60,12 @@
                       <input type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
                     </div>
                     <div class="form-group">
-                      <label for="start" class="form-label">Fecha de la Cita</label>
+                      <label for="start" class="form-label">start</label>
                       <input type="text" name="start" id="start" class="form-control" placeholder="start" aria-describedby="helpId">
                       <small id="helpId" class="text-muted">inicio del evento</small>
                     </div>
                     <div class="form-group">
-                      <label for="end" class="form-label">Hora de la Cita</label>
+                      <label for="end" class="form-label">end</label>
                       <input type="text" name="end" id="end" class="form-control" placeholder="end" aria-describedby="helpId">
                       <small id="helpId" class="text-muted">fin del evento</small>
                     </div>

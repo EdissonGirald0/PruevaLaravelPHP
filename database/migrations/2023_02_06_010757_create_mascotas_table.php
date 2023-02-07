@@ -16,10 +16,8 @@ return new class extends Migration
         Schema::create('mascotas', function (Blueprint $table) {
             $table->engine = "InnoDB";
             $table->bigIncrements('id');
-            $table->bigInteger('cita_id')->unsigned();
             $table->string('nombre_mascota');
             $table->bigInteger('tipo_id')->unsigned();
-            $table->foreign('cita_id')-> references('id')->on('citas');
             $table->foreign('tipo_id')-> references('id')->on('tipos')->cascadeOnDelete();
         });
     }

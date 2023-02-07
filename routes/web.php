@@ -19,4 +19,9 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/citas', [App\Http\Controllers\CitasController::class, 'index']);
+
+
+Route::get('/mascotas', App\Http\Controllers\MascotaController::class);
+Route::get('/clientes', [App\Http\Controllers\ClienteController::class, 'index']);
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

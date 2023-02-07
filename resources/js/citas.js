@@ -9,15 +9,15 @@ document.addEventListener('DOMContentLoaded', function() {
       locale:"es",
       selectable: true,
       headerToolbar: {
-        left: 'prev, prevYear, nextYear, next',
+        left: 'prev,prevYear,nextYear,next',
         center:'title',
         right: 'dayGridMonth,timeGridWeek,listWeek'
 
       },
-      dateClick: function(info) {
+      dateClick:function(info) {
         //alert('Date: ' + info.dateStr);
         //alert('Resource ID: ' + info.resource.id);
-        document.getElementById("#evento").Modal("show");
+        $("#evento").modal("show");
         console.log('Date: ' + info.dateStr)
 
       }
@@ -28,5 +28,4 @@ document.addEventListener('DOMContentLoaded', function() {
         const datos = new FormData(formulario);
         console.log(datos);
 
-    });
-  })
+    })});
